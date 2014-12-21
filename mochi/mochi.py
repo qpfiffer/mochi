@@ -2982,7 +2982,8 @@ def interact():
                         continue
                     buffer = s
             except EOFError:
-                break
+                print()
+                sys.exit()
 
             try:
                 lexer = lex(buffer, repl_mode=True)
