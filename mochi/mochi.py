@@ -3715,6 +3715,7 @@ def main():
         arg_parser.add_argument('-c', '--compile', action='store_true')
         arg_parser.add_argument('-e', '--execute-compiled-file', action='store_true')
         arg_parser.add_argument('file', nargs='?', type=str)
+        arg_parser.add_argument('rest', nargs=argparse.REMAINDER)
         args = arg_parser.parse_args()
 
         if args.file:
